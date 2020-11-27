@@ -1,0 +1,30 @@
+###
+GET http://localhost:1234/livro/listar
+
+###
+
+POST http://localhost:1234/livro/cadastrar/
+
+
+Content-Type: application/json
+{
+    "nome": "50 Tons de Liberadade",
+    "isbn": "785",
+    "preco": 35
+}
+
+###
+GET http://localhost:1234/livro/remover/3456
+
+###
+GET http://localhost:1234/livro/buscar/3456
+
+###
+content-type: application/json
+
+PUT http://localhost:1234/livro/alterar/
+{
+    "nome": "Seja Foda",
+    "isbn": "2929",
+    "preco": 100
+}
